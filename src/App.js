@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useState } from "react";
+import { useReducer, useState } from "react";
+import styled from "styled-components";
+import Form from "./components/Form";
+import Todo from "./components/Todo";
+import reducer from "./reducer";
+
+
 
 function App() {
+  const [state, dispatch] = useReducer(reducer,[])
+  const [title, setTitle] = useState("")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppBox>
+      <Form 
+      state={state}
+      dispatch={dispatch}
+      title={title}
+      setTitle={setTitle}/>
+      <Todo 
+      state={state}
+      dispatch={dispatch}
+      setTitle={setTitle}/>
+    </AppBox>
   );
 }
 
 export default App;
+
+const AppBox = styled.div`
+  box-sizing:border-box;
+  width: 700px;
+  margin:50px auto;
+`
