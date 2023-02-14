@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/reducer_todo/static/css/main.a41211c1.css",
+    "main.js": "/reducer_todo/static/js/main.37389127.js",
+    "static/media/backgoundImg.jpg": "/reducer_todo/static/media/backgoundImg.0d68f10ab564bf7a408f.jpg",
+    "index.html": "/reducer_todo/index.html",
+    "main.a41211c1.css.map": "/reducer_todo/static/css/main.a41211c1.css.map",
+    "main.37389127.js.map": "/reducer_todo/static/js/main.37389127.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a41211c1.css",
+    "static/js/main.37389127.js"
+  ]
+}
